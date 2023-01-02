@@ -1,0 +1,48 @@
+import math
+print("Do you want to Use the caluclator ? : Y/N")
+c=str(input())
+if c=='Y':
+    while c=='Y':
+        print("<<<<>>>>\n Press \n 1-Addition(x,y) \n 2-Substratcion(x,y) \n 3-Multiplication(x,y) \n 4-Division(x,y) \n 5-Exponenet(x,y) \n 6-Sin(x,y) \n 7-Tan(x,y) \n 8-Cos(x,y) \n 9-Convert to radian \n 10-Convert radian to degree \n<<<<>>>>")
+        x=int(input("Enter Your choice: "))
+        if x==1:
+            a=int(input("Enter your first number: "))
+            b=int(input("Enter the second number: "))
+            print(a+b)
+        elif x==2:
+            a=int(input("Enter your first number: "))
+            b=int(input("Enter the second number: "))
+            print(a-b)
+        elif x==3:
+            a=int(input("Enter your first number: "))
+            b=int(input("Enter the second number: "))
+            print(a*b)
+        elif x==4:
+            a=int(input("Enter your first number: "))
+            b=int(input("Enter the second number: "))
+            print(a/b)
+        elif x==5:
+            a=int(input("Enter your first number: "))
+            b=int(input("Enter the second number: "))
+            print(a**b)
+        elif x==6:
+            a=int(input("Enter the value for angle: "))
+            print(math.sin(a))
+        elif x==7:
+            a=int(input("Enter The value for angle: "))
+            print(math.tan(a))
+        elif x==8:
+            a=int(input("Enter the value for angle: "))
+            print(math.cos(a))
+        elif x==9:
+            a=int(input("Enter the angle: "))
+            print(a*(math.pi/180))
+        elif x==10:
+            a=int(input("Enter the angle in radian: "))
+            print(a*(180/math.pi))
+        else:
+            print("Invalid input")
+elif c=='N':
+    print("ThankYou for using our caluclator")
+else:
+    print("Use a valid input")
